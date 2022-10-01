@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>jogo da velha</title>
+
+    <p class= "titulo" data-titulo>
+       jogo da velha 
+    </p>
+
+<style type="text/css">
+
+    #player{
+        text-align: center;
+    }
+
+audio::-webkit-media-controls-timeline { display:inline-flex;}
+audio::-webkit-media-controls-panel {background: rgb(219, 125, 238)};
+
+</style>
+
+</head>
+<body>
+
+    <div id="player">
+    <audio src="jao.mp3" controls></audio> </div>
+    <div class="board" data-board>
+     <div class="cell" data-cell></div>
+     <div class="cell" data-cell></div>
+     <div class="cell" data-cell></div>
+     <div class="cell" data-cell></div>
+     <div class="cell" data-cell></div>
+     <div class="cell" data-cell></div>
+     <div class="cell" data-cell></div>
+     <div class="cell" data-cell></div>
+     <div class="cell" data-cell></div>
+    </div>
+
+    <div class="winning-message" data-winning-message>
+     <p class="winning-message-text"data-winning-message-text> X venceu!!</p>
+     <button class="winning-message-button"data-restart-button> reiniciar :)  </button>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
